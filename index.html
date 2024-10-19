@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashlane Construction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="main.js" defer></script> <!-- JavaScript for multi-language support -->
+    <style>
+        body {
+            font-family: 'Sans-serif', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Navbar -->
+    <header class="bg-white py-4 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-green-700">Flashlane</a>
+            <nav class="space-x-6 text-gray-700">
+                <a href="#" class="hover:text-green-600">Home</a>
+                <a href="#" class="hover:text-green-600">About</a>
+                <a href="#" class="hover:text-green-600">Service</a>
+                <a href="#" class="hover:text-green-600">Blog</a>
+                <a href="#" class="hover:text-green-600">Projects</a>
+            </nav>
+            <!-- Language Switcher -->
+            <div class="relative">
+                <button id="langDropdownBtn" class="bg-gray-200 px-4 py-2 rounded-lg">Language</button>
+                <div id="langDropdown" class="hidden absolute right-0 mt-2 bg-white rounded-lg shadow-lg">
+                    <button onclick="setLanguage('en')" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">English</button>
+                    <button onclick="setLanguage('fr')" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Français</button>
+                    <button onclick="setLanguage('ar')" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">العربية</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-white relative py-16">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center">
+            <div class="space-y-6">
+                <h1 class="text-6xl font-bold">
+                    We Take Your <br> Dream Home & Make It Real
+                </h1>
+                <p class="text-gray-600">
+                    Welcome to our construction presentation! We are excited to showcase our expertise and projects. Here we are with our new projects.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition duration-300">Get a quote</a>
+                    <a href="#" class="border border-gray-300 px-6 py-3 rounded-lg hover:bg-gray-200 transition duration-300">Our services</a>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="./images/hero.jpg" alt="Hero Image" class="rounded-lg shadow-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-gray-50 py-8">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div>
+                <span class="text-4xl font-bold text-green-700">127M+</span>
+                <p class="text-gray-600">Projects Completed</p>
+            </div>
+            <div>
+                <span class="text-4xl font-bold text-green-700">96K</span>
+                <p class="text-gray-600">Construction Engineers</p>
+            </div>
+            <div>
+                <span class="text-4xl font-bold text-green-700">88+</span>
+                <p class="text-gray-600">Awards</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="container mx-auto py-16">
+        <h2 class="text-4xl font-bold text-center mb-8">Our Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-green-700 text-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                <h3 class="text-2xl font-bold mb-4">Renovation</h3>
+                <p>Our experts are here to help you upgrade your home. Quality is our priority.</p>
+                <a href="#" class="underline text-white mt-4 inline-block">Learn More</a>
+            </div>
+            <div class="bg-gray-100 p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                <h3 class="text-2xl font-bold mb-4">Architecture</h3>
+                <p>Innovative and modern designs tailored to your building needs.</p>
+                <a href="#" class="underline text-green-700 mt-4 inline-block">Learn More</a>
+            </div>
+            <div class="bg-gray-100 p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                <h3 class="text-2xl font-bold mb-4">Construction</h3>
+                <p>We manage the entire process, ensuring precision and excellence in every detail.</p>
+                <a href="#" class="underline text-green-700 mt-4 inline-block">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-8">Our Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://source.unsplash.com/600x400/?building" alt="Project 1" class="w-full">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-4">Modern Villa</h3>
+                        <p class="text-gray-600">A luxurious modern villa in the heart of California.</p>
+                        <a href="#" class="text-green-600 mt-4 inline-block">View Project &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://source.unsplash.com/600x400/?office-building" alt="Project 2" class="w-full">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-4">Corporate Office</h3>
+                        <p class="text-gray-600">A sleek corporate office building located in New York City.</p>
+                        <a href="#" class="text-green-600 mt-4 inline-block">View Project &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://source.unsplash.com/600x400/?apartment" alt="Project 3" class="w-full">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-4">Luxury Apartments</h3>
+                        <p class="text-gray-600">A set of high-end luxury apartments in Miami.</p>
+                        <a href="#" class="text-green-600 mt-4 inline-block">View Project &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="bg-green-900 text-white py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-green-800 p-6 rounded-lg shadow-lg">
+                    <p>"Flashlane exceeded our expectations with professionalism and quality work, delivering on time and on budget!"</p>
+                    <h3 class="mt-4 font-semibold">John Doe</h3>
+                </div>
+                <div class="bg-green-800 p-6 rounded-lg shadow-lg">
+                    <p>"The team’s attention to detail and their focus on customer satisfaction made our project a success."</p>
+                    <h3 class="mt-4 font-semibold">Jane Smith</h3>
+                </div>
+                <div class="bg-green-800 p-6 rounded-lg shadow-lg">
+                    <p>"We highly recommend Flashlane. They are reliable, professional, and delivered an amazing project!"</p>
+                    <h3 class="mt-4 font-semibold">Michael Johnson</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Flashlane. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
